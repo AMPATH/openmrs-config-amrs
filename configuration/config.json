@@ -515,7 +515,19 @@
       "statusConceptSetUuid": "3ab190c1-4592-421e-bc5e-5e0524c9d785",
       "defaultStatusConceptUuid": "89d01aa5-0ab0-4626-934b-37766b4cd779",
       "defaultTransitionStatus": "89d01aa5-0ab0-4626-934b-37766b4cd779"
-    }
+    },
+    "priorityConfigs": [
+      {
+          "conceptUuid": "8e86ff12-ec83-41e8-a534-bb410739d880",
+          "tagClassName": "tag",
+          "tagType": "red"
+      },
+      {
+          "conceptUuid": "a96bb422-5480-46c7-ac42-20714b47199e",
+          "tagClassName": "tag",
+          "tagType": "green"
+      }
+  ]
   },
   "@openmrs/esm-laboratory-app": {
     "enableSendingLabTestsByEmail": true,
