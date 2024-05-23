@@ -1,0 +1,711 @@
+{
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1493,
+      "sizes": {
+        "javascript": 1493
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "22.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "6259dad4638a83f7",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 37191,
+      "sizes": {
+        "javascript": 37191
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "32.js"
+      ],
+      "auxiliaryFiles": [
+        "32.js.map"
+      ],
+      "hash": "dcc95fb6ba6a6633",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1232,
+      "sizes": {
+        "javascript": 1232
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "61.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "dc62c7d7415a67a2",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 4579827,
+      "sizes": {
+        "javascript": 4579827
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "127.js"
+      ],
+      "auxiliaryFiles": [
+        "127.js.map"
+      ],
+      "hash": "9a000f41e8edb8ae",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 1833490,
+      "sizes": {
+        "javascript": 1833490
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "130.js"
+      ],
+      "auxiliaryFiles": [
+        "130.js.map"
+      ],
+      "hash": "15cedfb6bc2ac8f5",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 8200846,
+      "sizes": {
+        "consume-shared": 336,
+        "javascript": 8175627,
+        "share-init": 336,
+        "runtime": 24547
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "3640e4247f113107",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "bf19114babe14be1",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 42,
+      "sizes": {
+        "consume-shared": 42
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "8011f971b2023689",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1330,
+      "sizes": {
+        "javascript": 1330
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "330.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "3692b1edc4bba7ab",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 34242,
+      "sizes": {
+        "javascript": 34242
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "341.js"
+      ],
+      "auxiliaryFiles": [
+        "341.js.map"
+      ],
+      "hash": "25e7f95b0f23c17f",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 24479,
+      "sizes": {
+        "javascript": 42,
+        "share-init": 336,
+        "runtime": 24101
+      },
+      "names": [
+        "@ohri/openmrs-esm-ohri-pmtct"
+      ],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct"
+      ],
+      "files": [
+        "ohri-pmtct-app.js"
+      ],
+      "auxiliaryFiles": [
+        "ohri-pmtct-app.js.map"
+      ],
+      "hash": "d31b64b779715190",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 45467,
+      "sizes": {
+        "javascript": 45467
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "416.js"
+      ],
+      "auxiliaryFiles": [
+        "416.js.map"
+      ],
+      "hash": "00bf53b2c5ea429e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 498757,
+      "sizes": {
+        "javascript": 498673,
+        "consume-shared": 84
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct"
+      ],
+      "files": [
+        "429.js"
+      ],
+      "auxiliaryFiles": [
+        "429.js.map"
+      ],
+      "hash": "4df15e2416294a36",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 27132,
+      "sizes": {
+        "javascript": 27132
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "480.js"
+      ],
+      "auxiliaryFiles": [
+        "480.js.map"
+      ],
+      "hash": "fac9ff23b76c2f30",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 67372,
+      "sizes": {
+        "javascript": 67372
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "547.js"
+      ],
+      "auxiliaryFiles": [
+        "547.js.map"
+      ],
+      "hash": "f5205be8061bc6d7",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 9917,
+      "sizes": {
+        "javascript": 9917
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "570.js"
+      ],
+      "auxiliaryFiles": [
+        "570.js.map"
+      ],
+      "hash": "1fcb3b7203169516",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 2575,
+      "sizes": {
+        "javascript": 2575
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "574.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "7b9a613fb25fd380",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11334,
+      "sizes": {
+        "javascript": 11334
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "616.js"
+      ],
+      "auxiliaryFiles": [
+        "616.js.map"
+      ],
+      "hash": "67a8cb36fe5588a4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 41801,
+      "sizes": {
+        "javascript": 41801
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "637.js"
+      ],
+      "auxiliaryFiles": [
+        "637.js.map"
+      ],
+      "hash": "79f0a270a159040c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "split chunk (cache group: defaultVendors)",
+      "size": 3059936,
+      "sizes": {
+        "javascript": 3059936
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct"
+      ],
+      "files": [
+        "649.js"
+      ],
+      "auxiliaryFiles": [
+        "649.js.map"
+      ],
+      "hash": "89c1a6b0cabbd3d4",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "652.js"
+      ],
+      "auxiliaryFiles": [
+        "652.js.map"
+      ],
+      "hash": "bd1b8202f97be17e",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": false,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: default)",
+      "size": 168,
+      "sizes": {
+        "consume-shared": 168
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [],
+      "auxiliaryFiles": [],
+      "hash": "d185ec4d57116903",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 13964,
+      "sizes": {
+        "javascript": 13964
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "731.js"
+      ],
+      "auxiliaryFiles": [
+        "731.js.map"
+      ],
+      "hash": "f4376c4e5b20be0a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 11899,
+      "sizes": {
+        "javascript": 11899
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "783.js"
+      ],
+      "auxiliaryFiles": [
+        "783.js.map"
+      ],
+      "hash": "d4af3f5a02edc484",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 16003,
+      "sizes": {
+        "javascript": 16003
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "797.js"
+      ],
+      "auxiliaryFiles": [
+        "797.js.map"
+      ],
+      "hash": "7a60fc64e3fcc301",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "reason": "reused as split chunk (cache group: defaultVendors)",
+      "size": 98245,
+      "sizes": {
+        "javascript": 98245
+      },
+      "names": [],
+      "idHints": [
+        "vendors"
+      ],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "819.js"
+      ],
+      "auxiliaryFiles": [
+        "819.js.map"
+      ],
+      "hash": "d45f077b2028749c",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 15577,
+      "sizes": {
+        "javascript": 15577
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "847.js"
+      ],
+      "auxiliaryFiles": [
+        "847.js.map"
+      ],
+      "hash": "6621be25699ed50a",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 1220,
+      "sizes": {
+        "javascript": 1220
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "852.js"
+      ],
+      "auxiliaryFiles": [],
+      "hash": "97a0c35032f0db83",
+      "childrenByOrder": {}
+    },
+    {
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "recorded": false,
+      "size": 504,
+      "sizes": {
+        "javascript": 504
+      },
+      "names": [],
+      "idHints": [],
+      "runtime": [
+        "@ohri/openmrs-esm-ohri-pmtct",
+        "main"
+      ],
+      "files": [
+        "983.js"
+      ],
+      "auxiliaryFiles": [
+        "983.js.map"
+      ],
+      "hash": "7a27da287d733325",
+      "childrenByOrder": {}
+    }
+  ]
+}

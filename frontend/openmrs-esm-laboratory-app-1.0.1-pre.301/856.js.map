@@ -1,0 +1,1 @@
+{"version":3,"file":"856.js","mappings":"oNAYA,QAT6C,WAC3C,OACE,kBAACA,EAAAA,EAAeA,CACdC,gBAAgB,gCAChBC,gBAAgB,eAGtB,C","sources":["webpack://@openmrs/esm-laboratory-app/./src/lab-tabs/data-table-extensions/in-progress-lab-requests-table.extension.tsx"],"names":["OrdersDataTable","actionsSlotName","fulfillerStatus"],"sourceRoot":""}

@@ -1,0 +1,1 @@
+{"version":3,"file":"572.js","mappings":"mNASA,QANoC,WAClC,OACE,kBAACA,EAAAA,EAAeA,CAACC,gBAAgB,6BAA6BC,WAAAA,GAElE,C","sources":["webpack://@openmrs/esm-laboratory-app/./src/lab-tabs/data-table-extensions/tests-ordered-table.extension.tsx"],"names":["OrdersDataTable","actionsSlotName","useFilter"],"sourceRoot":""}

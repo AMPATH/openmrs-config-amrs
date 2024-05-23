@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_openmrs_esm_home_app=globalThis.webpackChunk_openmrs_esm_home_app||[]).push([[93],{5093:(e,s,n)=>{n.r(s),n.d(s,{default:()=>m});var t=n(2870),o=n(268),a=n.n(o);const m=function(){return a().createElement(t.ExtensionSlot,{name:"home-metrics-tiles-slot"})}}}]);

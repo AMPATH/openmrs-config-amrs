@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_openmrs_esm_laboratory_app=globalThis.webpackChunk_openmrs_esm_laboratory_app||[]).push([[572],{572:(e,t,a)=>{a.r(t),a.d(t,{default:()=>n});var s=a(7244),o=a.n(s),r=a(9112);const n=function(){return o().createElement(r.c,{actionsSlotName:"tests-ordered-actions-slot",useFilter:!0})}}}]);

@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunk_openmrs_esm_laboratory_app=globalThis.webpackChunk_openmrs_esm_laboratory_app||[]).push([[856],{4856:(s,t,a)=>{a.r(t),a.d(t,{default:()=>l});var e=a(7244),o=a.n(e),r=a(9112);const l=function(){return o().createElement(r.c,{actionsSlotName:"inprogress-tests-actions-slot",fulfillerStatus:"IN_PROGRESS"})}}}]);
