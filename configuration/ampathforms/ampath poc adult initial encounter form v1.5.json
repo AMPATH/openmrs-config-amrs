@@ -925,8 +925,6 @@
 									"questionOptions": {
 										"rendering": "number",
 										"concept": "d67c7f03-7559-46bd-972b-6520769ec2b7",
-										"min":"0",
-										"max":"120",
 										"answers": []
 									},
 									"validators": []
@@ -1998,6 +1996,10 @@
 									{
 										"concept": "6a73f32d-1870-4527-af6e-74443251ded2",
 										"label": "NVP200mg/ZDV300mg/3TC150mg"
+									},
+									{
+										"concept": "a897e608-1350-11df-a1f1-0026b9348838",
+										"label": "NVP200mg/D4T40mg/3TC150mg"
 									},
 									{
 										"concept": "e78843da-fdb6-446d-8e99-873c278b3540",
@@ -8603,7 +8605,7 @@
 					"questions": [
 						{
 							"label": "Comorbid illness:",
-							"required":"true",
+							"required": "true",
 							"id": "comorbidIllness",
 							"questionOptions": {
 								"concept": "0ac4af8a-1b8e-4404-b445-c0471d6f7576",
@@ -8630,7 +8632,7 @@
 									},
 									{
 										"concept": "a8986880-1350-11df-a1f1-0026b9348838",
-										"label": "Hypertention"
+										"label": "Hypertension"
 									},
 									{
 										"concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
@@ -9303,18 +9305,6 @@
 										"label": "Targeted risk reduction"
 									},
 									{
-										"concept": "4b2bb2ce-4160-4e44-b310-5ceeb761ec38",
-										"label": "Treatment of GBV injuries"
-									},
-									{
-										"concept": "717c50e1-48da-4148-aeee-c49fdd957b64",
-										"label": "First line support (LIVES)"
-									},
-									{
-										"concept": "b75702a6-908d-491b-9399-6495712c81cc",
-										"label": "Emergency contraceptives"
-									},
-									{
 										"concept": "a89ad3a4-1350-11df-a1f1-0026b9348838",
 										"label": "N/A"
 									}
@@ -9437,6 +9427,18 @@
 												"label": "Resistant clinic"
 											},
 											{
+												"concept": "4b2bb2ce-4160-4e44-b310-5ceeb761ec38",
+												"label": "Treatment of GBV injuries"
+											},
+											{
+												"concept": "717c50e1-48da-4148-aeee-c49fdd957b64",
+												"label": "First line support (LIVES)"
+											},
+											{
+												"concept": "b75702a6-908d-491b-9399-6495712c81cc",
+												"label": "Emergency contraceptives"
+											},
+											{
 												"concept": "355b199f-c9c7-4e91-831f-2be17d2c67bd",
 												"label": "Legal counsel"
 											},
@@ -9453,6 +9455,10 @@
 												"label": "Emergency shelter"
 											},
 											{
+												"concept": "57e92f60-0c54-4769-ba3c-e00bae83f811",
+												"label": "Forensic Exam"
+											},
+											{
 												"concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
 												"label": "Other"
 											}
@@ -9460,7 +9466,13 @@
 										"rendering": "multiCheckbox"
 									},
 									"type": "obs",
-									"validators": []
+									"validators": [
+										{
+											"type": "js_expression",
+											"failsWhenExpression": "isEmpty(myValue) && (physical === 'a899b35c-1350-11df-a1f1-0026b9348838' || emmotional === 'a899b35c-1350-11df-a1f1-0026b9348838' || sexual === 'a899b35c-1350-11df-a1f1-0026b9348838' || financial === 'a899b35c-1350-11df-a1f1-0026b9348838')",
+											"message": "Patient screened positive for GBV/IPV. Please indicate service provided."
+										}
+									]
 								},
 								{
 									"label": "Referrals made to the patient: Other (specify):",

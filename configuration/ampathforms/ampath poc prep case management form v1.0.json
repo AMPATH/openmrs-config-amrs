@@ -1,0 +1,284 @@
+{
+	"name": "AMPATH POC PrEP Case Management Form v1.0",
+	"uuid": "xxxx",
+	"processor": "EncounterFormProcessor",
+	"pages": [
+		{
+			"label": "PrEP Case Management",
+			"sections": [
+				{
+					"label": "PrEP Case Management",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"type": "encounterProvider",
+							"label": "Provider:",
+							"id": "provider",
+							"required": "true",
+							"default": "",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							}
+						},
+						{
+							"label": "Visit date:",
+							"type": "encounterDatetime",
+							"required": "true",
+							"default": "",
+							"id": "encDate",
+							"questionOptions": {
+								"rendering": "date"
+							},
+							"validators": [
+								{
+									"type": "date"
+								}
+							]
+						},
+						{
+							"type": "encounterLocation",
+							"label": "Facility name (site/satellite clinic required):",
+							"id": "location",
+							"required": "true",
+							"questionOptions": {
+								"rendering": "ui-select-extended"
+							}
+						},
+						{
+							"label": "Type of client:",
+							"required": "true",
+							"id": "clientType",
+							"questionOptions": {
+								"answers": [
+									{
+										"concept": "5c1e610c-36f4-456c-be9b-11c106591f7f",
+										"label": "New client (Within month one of initiation)."
+									},
+									{
+										"concept": "a8a4812e-1350-11df-a1f1-0026b9348838",
+										"label": "Revisit (Beyond one month of initiation)"
+									}
+								],
+								"concept": "a89eea66-1350-11df-a1f1-0026b9348838",
+								"rendering": "radio"
+							},
+							"type": "obs"
+						},
+						{
+							"label": "New client (within month one of initiation):",
+							"id": "newClient",
+							"type": "obs",
+							"questionOptions": {
+								"answers": [
+									{
+										"concept": "6697245e-3dbd-4da4-86ee-f99aca806b6b",
+										"label": "2 days after initiation."
+									},
+									{
+										"concept": "793a8dd6-cc9d-483b-b104-6079d2f1c4ff",
+										"label": "2 weeks after initiation"
+									},
+									{
+										"concept": "35bcadbc-0338-45f2-a7d8-c7725839c349",
+										"label": "2 days before TCA"
+									}
+								],
+								"rendering": "radio",
+								"concept": "f47e381c-06d9-4821-9e4b-9422526ac032"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "clientType !== '5c1e610c-36f4-456c-be9b-11c106591f7f'"
+							}
+						},
+						{
+							"label": "Revisit (Beyond one month of initiation):",
+							"id": "revisit",
+							"type": "obs",
+							"questionOptions": {
+								"concept": "244b67bf-da2d-4009-9bc9-91a52a92defe",
+								"rendering": "radio",
+								"answers": [
+									{
+										"concept": "a8a45e24-1350-11df-a1f1-0026b9348838",
+										"label": "Month 2"
+									},
+									{
+										"concept": "a8a45eec-1350-11df-a1f1-0026b9348838",
+										"label": "Month 3"
+									},
+									{
+										"concept": "016ab823-3c50-4acc-a9e2-8ba54bc35b15",
+										"label": "Month 4"
+									},
+									{
+										"concept": "a8a45faa-1350-11df-a1f1-0026b9348838",
+										"label": "Month 5"
+									},
+									{
+										"concept": "3f1e6da9-5fce-49b6-8314-9c1beb758aff",
+										"label": "Month 6"
+									}
+								]
+							},
+							"hide": {
+								"hideWhenExpression": "clientType !== 'a8a4812e-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Phone call follow up outcome:",
+							"id": "phoneCall",
+							"questionOptions": {
+								"concept": "3ee34cf8-c735-4531-98ac-07ea199082b1",
+								"answers": [
+									{
+										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
+										"label": "Reached"
+									},
+									{
+										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
+										"label": "Not reached"
+									}
+								],
+								"rendering": "radio"
+							},
+							"type": "obs",
+							"validators": []
+						},
+						{
+							"label": "Reasons not reached:",
+							"id": "reasonNotContacted",
+							"type": "obs",
+							"questionOptions": {
+								"concept": "aa4fe031-9528-42d2-a716-4207094d4a17",
+								"rendering": "radio",
+								"answers": [
+									{
+										"concept": "9151149a-648e-43e5-9b57-2aeeecbf446a",
+										"label": "Phone call answered by another person"
+									},
+									{
+										"concept": "fdd18cec-11ba-4512-ab3c-b66066847f58",
+										"label": "No one answers"
+									},
+									{
+										"concept": "a89dec06-1350-11df-a1f1-0026b9348838",
+										"label": "Phone inactive/not going through"
+									},
+									{
+										"concept": "a69cdbf7-edf0-4e4d-a4dc-1ff3bc771d5c",
+										"label": "No phone number"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "phoneCall !== 'a899b42e-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Progress of the clients (for those reached):",
+							"id": "progressClient",
+							"type": "obs",
+							"questionOptions": {
+								"concept": "59f21b48-ccf9-40b8-9fcb-92bdbf90a4dd",
+								"answers": [
+									{
+										"concept": "7b6a9ea0-0193-4036-a56b-63295241f086",
+										"label": "Doing well and continuing with drugs"
+									},
+									{
+										"concept": "a89ec3f6-1350-11df-a1f1-0026b9348838",
+										"label": "Stopped drugs "
+									}
+								],
+								"rendering": "radio"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "phoneCall !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Stopped drugs due to:",
+							"id": "stopReason",
+							"type": "obs",
+							"questionOptions": {
+								"concept": "a89b7110-1350-11df-a1f1-0026b9348838",
+								"answers": [
+									{
+										"concept": "a89eb8c0-1350-11df-a1f1-0026b9348838",
+										"label": "Drug side effects"
+									},
+									{
+										"concept": "ecafa614-49c5-4eba-84c7-b85b0d9e2c46",
+										"label": "Pill burden (not able to adhere)"
+									},
+									{
+										"concept": "d81b10a7-a2c3-4059-bf94-213c8425c976",
+										"label": "Fear of IPV from partner"
+									},
+									{
+										"concept": "a54ea51a-08be-4d89-a7eb-d0b235764a1e",
+										"label": "Violence from partner"
+									},
+									{
+										"concept": "636b7246-51f7-4985-9430-431b09d39bea",
+										"label": "No more risk and decided to stop"
+									}
+								],
+								"rendering": "radio"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "progressClient !== 'a89ec3f6-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Action taken:",
+							"id": "actionTaken",
+							"type": "obs",
+							"questionOptions": {
+								"concept": "9dba0620-629f-4b25-9c31-1b17afc7ca70",
+								"answers": [
+									{
+										"concept": "ea5d6f38-5081-4652-81c5-ae35f7ed8665",
+										"label": "Encouraged client to continue with PrEP"
+									},
+									{
+										"concept": "a89e2c02-1350-11df-a1f1-0026b9348838",
+										"label": "Client requested to visit the health facility"
+									},
+									{
+										"concept": "717c50e1-48da-4148-aeee-c49fdd957b64",
+										"label": "Client offered LIVES on phone"
+									},
+									{
+										"concept": "a8af5356-1350-11df-a1f1-0026b9348838",
+										"label": "Referred case to clinician for discontinuation and documented"
+									}
+								],
+								"rendering": "checkbox"
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "phoneCall !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Comments:",
+							"type": "obs",
+							"required": "true",
+							"id": "assNote",
+							"questionOptions": {
+								"concept": "5e4dc798-2cce-4a1a-97e9-bcf22d64b07c",
+								"rendering": "textarea",
+								"rows": "5"
+							}
+						}
+					]
+				}
+			]
+		}
+	]
+}

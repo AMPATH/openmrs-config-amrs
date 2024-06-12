@@ -165,6 +165,26 @@
 							}
 						},
 						{
+							"label": "Condom issued:",
+							"type": "obs",
+							"questionOptions": {
+								"rendering": "select",
+								"concept": "a8b034d8-1350-11df-a1f1-0026b9348838",
+								"answers": [
+									{
+										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
+										"label": "Yes"
+									},
+									{
+										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
+										"label": "No"
+									}
+								]
+							},
+							"validators": [],
+							"id": "condomIssue"
+						},
+						{
 							"label": "Continue regimen",
 							"type": "obs",
 							"id": "initialRegPres",

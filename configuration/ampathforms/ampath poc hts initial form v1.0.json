@@ -3,6 +3,7 @@
   "description": "Form for HTS testing services",
   "version": "1.0",
   "published": true,
+  "uuid": "edb264d4-91fc-4d16-bb34-a413eef2b865",
   "retired": false,
   "encounter": "HTS",
   "pages": [
@@ -52,11 +53,11 @@
       "label": "HTS Recordings",
       "sections": [
         {
-          "label": "Population Type",
+          "label": "Population Typology",
           "isExpanded": "true",
           "questions": [
             {
-              "label": "Population type",
+              "label": "Population Typology",
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
@@ -64,15 +65,15 @@
                 "answers": [
                   {
                     "concept": "79ab66e0-4248-491e-be7c-cddaa89bb0d7",
-                    "label": "General Population"
+                    "label": "GP (General Population)"
                   },
                   {
                     "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
                     "label": "Key Population"
                   },
                   {
-                    "concept": "8b0fa615-39c7-40ba-ad06-579ae540c6a5",
-                    "label": "Priority Population"
+                    "concept": "729690d4-09dc-497e-a180-bfc2e9d7d21d",
+                    "label": "Vulnerable Population"
                   }
                 ]
               },
@@ -86,20 +87,16 @@
                 "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
                 "answers": [
                   {
+                    "concept": "a8af49d8-1350-11df-a1f1-0026b9348838",
+                    "label": "DC (Discordant couple)"
+                  },
+                  {
+                    "concept": "a89ff438-1350-11df-a1f1-0026b9348838",
+                    "label": "FSW (Female sex Worker)"
+                  },
+                  {
                     "concept": "a890d57a-1350-11df-a1f1-0026b9348838",
-                    "label": "People who inject drugs"
-                  },
-                  {
-                    "concept": "8e31a288-1a91-438b-8c88-768a61ba29ab",
-                    "label": "Female sex Worker"
-                  },
-                  {
-                    "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
-                    "label": "People in prison and other closed settings"
-                  },
-                  {
-                    "concept": "a4d337b6-4029-467f-9b16-629e24d05e15",
-                    "label": "Transgender"
+                    "label": "PWID/PWUD (People who Inject drugs/People Who Use Drugs)"
                   },
                   {
                     "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
@@ -120,20 +117,16 @@
                 "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
                 "answers": [
                   {
-                    "concept": "a890d57a-1350-11df-a1f1-0026b9348838",
-                    "label": "People who inject drugs"
+                    "concept": "a8af49d8-1350-11df-a1f1-0026b9348838",
+                    "label": "DC (Discordant couple)"
                   },
                   {
                     "concept": "e19c35f0-12f0-46c2-94ea-97050f37b811",
-                    "label": "Men who have sex with men"
+                    "label": "MSM/MSW (Men who have sex with men/Male Sex Workers)"
                   },
                   {
-                    "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
-                    "label": "People in prison and other closed settings"
-                  },
-                  {
-                    "concept": "a4d337b6-4029-467f-9b16-629e24d05e15",
-                    "label": "Transgender"
+                    "concept": "a890d57a-1350-11df-a1f1-0026b9348838",
+                    "label": "PWID/PWUD (People who Inject drugs/People Who Use Drugs)"
                   },
                   {
                     "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
@@ -147,29 +140,29 @@
               }
             },
             {
-              "label": "Please indicate Priority Population :",
+              "label": "Please indicate vulnerable population type:",
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
+                "concept": "729690d4-09dc-497e-a180-bfc2e9d7d21d",
                 "answers": [
                   {
                     "concept": "a5e87a67-2f2f-43b5-9acd-0132d796d901",
-                    "label": "Fisher folk"
+                    "label": "Fisher Folks"
                   },
                   {
                     "concept": "5ebb18d6-8fab-43bc-898f-6428dcc24c1e",
-                    "label": "Truck driver"
+                    "label": "Truck drivers"
                   },
                   {
-                    "concept": "95d14f8c-87dc-4f53-acbe-525086c65a1d",
+                    "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
+                    "label": "People in Prison Setting"
+                  },
+                  {
+                    "concept": "38e553c5-3744-4bd6-9a30-d582741ddb5d",
                     "label": "Adolescent and young girls"
                   },
                   {
-                    "concept": "b7d9878b-8ce9-4cdf-b6c3-a1545989c604",
-                    "label": "Prisoner"
-                  },
-                  {
                     "concept": "72303ffa-d5b0-4a21-80a9-637ad6ec9538",
                     "label": "Military and other uniformed services"
                   },
@@ -179,17 +172,17 @@
                   }
                 ]
               },
-              "id": "femalePriorityPopulation",
+              "id": "femalevp",
               "hide": {
-                "hideWhenExpression": "isEmpty(populationType) || populationType != '8b0fa615-39c7-40ba-ad06-579ae540c6a5' || sex !== 'F'"
+                "hideWhenExpression": "isEmpty(populationType) || populationType != '729690d4-09dc-497e-a180-bfc2e9d7d21d' || sex !== 'F'"
               }
             },
             {
-              "label": "Please indicate Priority Population :",
+              "label": "Please indicate vulnerable population type:",
               "type": "obs",
               "questionOptions": {
                 "rendering": "select",
-                "concept": "93aa3f1d-1c39-4196-b5e6-8adc916cd5d6",
+                "concept": "729690d4-09dc-497e-a180-bfc2e9d7d21d",
                 "answers": [
                   {
                     "concept": "a5e87a67-2f2f-43b5-9acd-0132d796d901",
@@ -213,9 +206,9 @@
                   }
                 ]
               },
-              "id": "malePriorityPopulation",
+              "id": "malevp",
               "hide": {
-                "hideWhenExpression": "isEmpty(populationType) || populationType !== '8b0fa615-39c7-40ba-ad06-579ae540c6a5' || sex !== 'M'"
+                "hideWhenExpression": "isEmpty(populationType) || populationType !== '729690d4-09dc-497e-a180-bfc2e9d7d21d' || sex !== 'M'"
               }
             },
             {
@@ -223,19 +216,19 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "91a87033-8f75-4f08-9f15-0d8ae66bd9d9",
+                "concept": "522cca7a-235d-43d4-837e-8a118f2d9f88",
                 "answers": [
                   {
                     "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes",
                     "conceptMappings": [
                       {
-                        "type": "AMPATH",
+                        "type": "PIH",
                         "value": "1065"
                       },
                       {
-                        "type": "AMPATH",
-                        "value": "Ampath: 1065"
+                        "type": "PIH Malawi",
+                        "value": "Malawi: 1065"
                       },
                       {
                         "type": "AMPATH",
@@ -244,6 +237,10 @@
                       {
                         "type": "CIEL",
                         "value": "1065"
+                      },
+                      {
+                        "type": "SNOMED CT",
+                        "value": "CT: 373066001"
                       }
                     ]
                   },
@@ -252,12 +249,16 @@
                     "label": "No",
                     "conceptMappings": [
                       {
-                        "type": "AMPATH",
+                        "type": "PIH",
                         "value": "1066"
                       },
                       {
-                        "type": "AMPATH",
-                        "value": "Ampath: 1066"
+                        "type": "SNOMED CT",
+                        "value": "CT: 373067005"
+                      },
+                      {
+                        "type": "PIH Malawi",
+                        "value": "Malawi: 1066"
                       },
                       {
                         "type": "CIEL",
@@ -416,7 +417,7 @@
                 ]
               },
               "hide": {
-                "hideWhenExpression": "isEmpty(everTested) || everTested === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "everTested === 'a899b42e-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -545,7 +546,7 @@
               },
               "id": "willingToShareResults",
               "hide": {
-                "hideWhenExpression": "isEmpty(selfTestLastTwelveMonths) || selfTestLastTwelveMonths !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
+                "hideWhenExpression": "isEmpty(selfTestLastTwelveMonths) || selfTestLastTwelveMonths != 'a899b35c-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -637,7 +638,8 @@
                   }
                 ]
               },
-              "id": "htsApproach"
+              "id": "htsApproach",
+              "required": "true"
             }
           ]
         },
@@ -670,7 +672,7 @@
                     "label": "Index testing"
                   },
                   {
-                    "concept": "95ae82d3-31a2-48a8-909a-c2c1b283ed85",
+                    "concept": "e194e1cc-3975-4bb2-85e1-c71597ebcd64",
                     "label": "SNS: Social Networks"
                   },
                   {
@@ -712,7 +714,7 @@
                     "label": "Index testing"
                   },
                   {
-                    "concept": "95ae82d3-31a2-48a8-909a-c2c1b283ed85",
+                    "concept": "e194e1cc-3975-4bb2-85e1-c71597ebcd64",
                     "label": "SNS: Social Networks"
                   },
                   {
@@ -820,7 +822,7 @@
               "id": "htsFacilityEntryPoint",
               "required": "true",
               "hide": {
-                "hideWhenExpression": "isEmpty(htsSetting) || htsSetting != '1537AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "isEmpty(htsSetting) || htsSetting != '744b2cb1-0849-486c-a9cb-1ebe4b03c4bf'"
               }
             },
             {
@@ -831,7 +833,7 @@
                 "concept": "aad34924-d6e7-4138-a841-0fea9ee4b41f",
                 "answers": [
                   {
-                    "concept": "6305093c-8a5b-480a-9a68-9f5418a2c616",
+                    "concept": "9bc09285-7a04-4c81-a313-3a1c67f5c84a",
                     "label": "Community Testing"
                   },
                   {
@@ -851,7 +853,7 @@
               "id": "htsCommunityEntryPoint",
               "required": "true",
               "hide": {
-                "hideWhenExpression": "isEmpty(htsSetting) || htsSetting != '6305093c-8a5b-480a-9a68-9f5418a2c616'"
+                "hideWhenExpression": "isEmpty(htsSetting) || htsSetting != '9bc09285-7a04-4c81-a313-3a1c67f5c84a'"
               }
             }
           ]
@@ -900,13 +902,25 @@
                     "label": "Presumed TB",
                     "conceptMappings": [
                       {
-                        "type": "AMPATH",
-                        "value": "12388"
+                        "type": "SNOMED CT",
+                        "value": "CT: 41769001"
+                      },
+                      {
+                        "type": "CIEL",
+                        "value": "142177"
+                      },
+                      {
+                        "type": "IMO ProblemIT",
+                        "value": "ProblemIT: 27053"
+                      },
+                      {
+                        "type": "ICD-10-WHO",
+                        "value": "R69"
                       }
                     ]
                   },
                   {
-                    "concept": "c76c5c25-a092-4990-abaf-53a0c4155d9a",
+                    "concept": "a899ea48-1350-11df-a1f1-0026b9348838",
                     "label": "Not Done",
                     "conceptMappings": [
                       {
@@ -920,7 +934,7 @@
                     ]
                   },
                   {
-                    "concept": "a11755b3-3e5b-4429-a6dc-e3dbeff78a9e",
+                    "concept": "a899e444-1350-11df-a1f1-0026b9348838",
                     "label": "On TB Treatment"
                   }
                 ]
@@ -941,11 +955,11 @@
                 "concept": "9d9ccb6b-73ae-48dd-83f9-12c782ce6685",
                 "answers": [
                   {
-                    "concept": "true",
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes"
                   },
                   {
-                    "concept": "false",
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
                     "label": "No"
                   }
                 ]
@@ -973,7 +987,7 @@
               "id": "testedAs",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -986,7 +1000,7 @@
               "id": "hivTestOne",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               },
               "questions": [
                 {
@@ -1013,7 +1027,7 @@
                   "id": "kitName",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
                   }
                 },
                 {
@@ -1026,7 +1040,7 @@
                   "id": "lotNumber",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
                   }
                 },
                 {
@@ -1050,7 +1064,7 @@
                     }
                   ],
                   "hide": {
-                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
                   }
                 },
                 {
@@ -1077,7 +1091,7 @@
                   "id": "testResults",
                   "validators": [],
                   "hide": {
-                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                    "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
                   }
                 },
                 {
@@ -1085,7 +1099,7 @@
                   "type": "obs",
                   "questionOptions": {
                     "rendering": "select",
-                    "concept": "11dc7e01-ecd1-41ab-9bcd-5c8b1cd8b5c6",
+                    "concept": "9eaaca48-85a6-4ac8-9d12-a5f877b87eef",
                     "answers": [
                       {
                         "concept": "a896d2cc-1350-11df-a1f1-0026b9348838",
@@ -1114,7 +1128,7 @@
               "id": "hivTestTwo",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               },
               "questions": [
                 {
@@ -1154,7 +1168,7 @@
                   "type": "obs",
                   "questionOptions": {
                     "rendering": "date",
-                    "concept": "26dd11ff-525f-4807-9176-aa53a7583734",
+                    "concept": "2550a5ec-d404-49a0-ae75-e2f82ee277a8",
                     "weeksList": ""
                   },
                   "id": "expiryDateB",
@@ -1209,7 +1223,7 @@
                 "rendering": "select",
                 "concept": "a89c6c64-1350-11df-a1f1-0026b9348838",
                 "calculate": {
-                  "calculateExpression": "String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' && String(testResultsB) === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' ? '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' : String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' && String(testResultsB) === 'a896d2cc-1350-11df-a1f1-0026b9348838' ? '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' : String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' ? 'a896f3a6-1350-11df-a1f1-0026b9348838' : String(testResults) === 'a896d2cc-1350-11df-a1f1-0026b9348838' ? 'a896d2cc-1350-11df-a1f1-0026b9348838' : String(testResults) || String(testResultsB) === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' ? '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' : ''"
+                  "calculateExpression": "String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' && String(testResultsB) === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' ? 'a89a7ae4-1350-11df-a1f1-0026b9348838' : String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' && String(testResultsB) === 'a896d2cc-1350-11df-a1f1-0026b9348838' ? 'a89a7ae4-1350-11df-a1f1-0026b9348838' : String(testResults) === 'a896f3a6-1350-11df-a1f1-0026b9348838' ? 'a896f3a6-1350-11df-a1f1-0026b9348838' : String(testResults) === 'a896d2cc-1350-11df-a1f1-0026b9348838' ? 'a896d2cc-1350-11df-a1f1-0026b9348838' : String(testResults) || String(testResultsB) === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' ? 'a89a7ae4-1350-11df-a1f1-0026b9348838' : ''"
                 },
                 "answers": [
                   {
@@ -1221,7 +1235,7 @@
                     "label": "Negative"
                   },
                   {
-                    "concept": "84242457-a5f4-48fe-b4e0-0e7fa2575ad8",
+                    "concept": "a89a7ae4-1350-11df-a1f1-0026b9348838",
                     "label": "Inconclusive"
                   }
                 ]
@@ -1229,7 +1243,7 @@
               "id": "finalResult",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -1240,7 +1254,7 @@
                 "concept": "a8a4a8b6-1350-11df-a1f1-0026b9348838",
                 "answers": [
                   {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes",
                     "conceptMappings": [
                       {
@@ -1266,7 +1280,7 @@
                     ]
                   },
                   {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
                     "label": "No",
                     "conceptMappings": [
                       {
@@ -1294,9 +1308,10 @@
                 ]
               },
               "id": "resultsGiven",
+              "required": "true",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -1304,9 +1319,9 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "6096AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "a8af49d8-1350-11df-a1f1-0026b9348838",
                 "calculate": {
-                  "calculateExpression": "String(testedAs) === '147082f4-0662-4bfa-a54c-914f1db97373' ? '1175AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : ''"
+                  "calculateExpression": "String(testedAs) === '147082f4-0662-4bfa-a54c-914f1db97373' ? 'a89ad3a4-1350-11df-a1f1-0026b9348838' : ''"
                 },
                 "conceptMappings": [
                   {
@@ -1320,7 +1335,7 @@
                 ],
                 "answers": [
                   {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes",
                     "conceptMappings": [
                       {
@@ -1346,7 +1361,7 @@
                     ]
                   },
                   {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
                     "label": "No",
                     "conceptMappings": [
                       {
@@ -1372,7 +1387,7 @@
                     ]
                   },
                   {
-                    "concept": "1175AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a89ad3a4-1350-11df-a1f1-0026b9348838",
                     "label": "N/A"
                   }
                 ]
@@ -1380,7 +1395,7 @@
               "id": "coupleDiscordant",
               "validators": [],
               "hide": {
-                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'true'"
+                "hideWhenExpression": "isEmpty(consentGiven) || consentGiven !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
               }
             }
           ]
@@ -1397,25 +1412,26 @@
                 "concept": "91c2f975-14db-4fe1-b025-952b591377e1",
                 "answers": [
                   {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes"
                   },
                   {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
                     "label": "No"
                   }
                 ]
               },
               "id": "clientReferred",
               "hide": {
-                "hideWhenExpression": "isEmpty(testResults) || testResults !== '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'  || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '163611AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'  "
+                "hideWhenExpression": "isEmpty(testResults) || testResults !== 'a896d2cc-1350-11df-a1f1-0026b9348838' || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === 'a896f3a6-1350-11df-a1f1-0026b9348838'  || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === 'a896d2cc-1350-11df-a1f1-0026b9348838' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === 'a896f3a6-1350-11df-a1f1-0026b9348838' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8'  "
               }
             },
             {
               "label": "Referral history",
+              "id": "refHist",
               "type": "obsGroup",
               "questionOptions": {
-                "concept": "1932AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "1c6ac7dc-38d8-43ce-9b74-2edd1a637dc2",
                 "rendering": "group"
               },
               "questions": [
@@ -1424,57 +1440,57 @@
                   "type": "obs",
                   "questionOptions": {
                     "rendering": "checkbox",
-                    "concept": "1272AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a89c2344-1350-11df-a1f1-0026b9348838",
                     "answers": [
                       {
-                        "concept": "a8b03f82-1350-11df-a1f1-0026b9348838",
+                        "concept": "14b2dcee-94ea-4ed4-9d63-f558ce9ce076",
                         "label": "Risk reduction counselling"
                       },
                       {
-                        "concept": "6300AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "a8b03eba-1350-11df-a1f1-0026b9348838",
                         "label": "Safer sex practices"
                       },
                       {
-                        "concept": "190AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "a893516a-1350-11df-a1f1-0026b9348838",
                         "label": "Condom use counselling"
                       },
                       {
-                        "concept": "2090AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "a8a19c20-1350-11df-a1f1-0026b9348838",
                         "label": "Post-exposure prophylaxis"
                       },
                       {
-                        "concept": "174AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "14d88980-54b5-470d-b9b9-78f5c6dd6e56",
                         "label": "Prevention and treatment of STIs"
                       },
                       {
-                        "concept": "9305AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "a2c49302-edb4-4baa-8440-2448eafd0ec1",
                         "label": "Substance abuse and mental health treatment"
                       },
                       {
-                        "concept": "11565AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "4045cb6c-793c-4784-bea5-6e2b7bfd8467",
                         "label": "Prevention of GBV"
                       },
                       {
-                        "concept": "8707AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "2b14aa1f-fb17-4519-bf67-d908f2e86bc7",
                         "label": "VMMC"
                       },
                       {
-                        "concept": "2047AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "387aef17-88a4-431e-893a-c571217f1a19",
                         "label": "HIV testing and re-testing"
                       },
                       {
-                        "concept": "9607AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "27ac429d-8a42-476e-b2f6-65bde0b8c935",
                         "label": "Pre-Exposure Prophylaxis"
                       },
                       {
-                        "concept": "5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                        "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
                         "label": "Others"
                       }
                     ]
                   },
                   "id": "refeRRalSerVicEs",
                   "hide": {
-                    "hideWhenExpression": "isEmpty(clientReferred) || clientReferred !=='1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                    "hideWhenExpression": "isEmpty(clientReferred) || clientReferred !=='a899b35c-1350-11df-a1f1-0026b9348838'"
                   }
                 }
               ]
@@ -1484,11 +1500,11 @@
               "type": "obs",
               "id": "speCrEferRed",
               "questionOptions": {
-                "rendering": "textbox",
-                "concept": "10516AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "rendering": "text",
+                "concept": "2c8bb721-b642-428a-b956-7902242776ab"
               },
               "hide": {
-                "hideWhenExpression": "refeRRalSerVicEs !=='5622AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "refeRRalSerVicEs !=='a8aaf3e2-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
@@ -1496,50 +1512,50 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "2327AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "a8a47396-1350-11df-a1f1-0026b9348838",
                 "calculate": {
-                  "calculateExpression": "String(finalResult) === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '162050AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : String(finalResult) === '1138AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' ? '167441AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' : '08657979-0a23-411d-be18-2ddceeb2f346'"
+                  "calculateExpression": "String(finalResult) === 'a896f3a6-1350-11df-a1f1-0026b9348838' ? 'a8a3899a-1350-11df-a1f1-0026b9348838' : String(finalResult) === 'a89a7ae4-1350-11df-a1f1-0026b9348838' ? 'f56dc685-9c5a-4a79-99d3-e155861552e3' : '5be923d3-2c87-4990-9ee8-2d4e0400a467'"
                 },
                 "answers": [
                   {
-                    "concept": "68962236-c3c1-411c-9185-c4abd286598b",
+                    "concept": "5be923d3-2c87-4990-9ee8-2d4e0400a467",
                     "label": "Confirmatory Test"
                   },
                   {
-                    "concept": "2240AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a8a3899a-1350-11df-a1f1-0026b9348838",
                     "label": "Comprehensive care center"
                   },
                   {
-                    "concept": "1030AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "f56dc685-9c5a-4a79-99d3-e155861552e3",
                     "label": "DBS for PCR"
                   }
                 ]
               },
               "id": "referredForCare",
               "hide": {
-                "hideWhenExpression": "isEmpty(testResults) || isEmpty(testResultsB) || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults !== '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '163611AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "isEmpty(testResults) || isEmpty(testResultsB) || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === 'a896d2cc-1350-11df-a1f1-0026b9348838' || testResults !== '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB !== 'a896f3a6-1350-11df-a1f1-0026b9348838' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === 'a896d2cc-1350-11df-a1f1-0026b9348838' "
               }
             },
             {
               "label": "Referral to:",
               "type": "obs",
               "questionOptions": {
-                "concept": "6434322f-d050-4764-8c00-741e20c4c9e1",
+                "concept": "2d1930dc-354c-4d5a-810e-b0d6396716cd",
                 "rendering": "select",
                 "answers": [
                   {
-                    "concept": "11870AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "59312903-dde9-4f7a-b6cf-7b41863b7e81",
                     "label": "This health facility"
                   },
                   {
-                    "concept": "7308AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "ab396b67-273c-4c97-9f90-f858d79b13b1",
                     "label": "Other health facility"
                   }
                 ]
               },
               "id": "referredToCare",
               "hide": {
-                "hideWhenExpression": "isEmpty(testResults) || isEmpty(testResultsB) || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults !== '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB !== '703AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || testResults === '10766AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' && testResultsB === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "isEmpty(testResults) || isEmpty(testResultsB) || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' || testResults === 'a896f3a6-1350-11df-a1f1-0026b9348838' && testResultsB === 'a896d2cc-1350-11df-a1f1-0026b9348838' || testResults !== '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB !== 'a896f3a6-1350-11df-a1f1-0026b9348838' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' || testResults === '84242457-a5f4-48fe-b4e0-0e7fa2575ad8' && testResultsB === 'a896d2cc-1350-11df-a1f1-0026b9348838' "
               }
             },
             {
@@ -1547,11 +1563,11 @@
               "type": "obs",
               "id": "otherFacility",
               "questionOptions": {
-                "concept": "9202AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "99f8ac81-cea1-43eb-88fb-29a9ea2d77cf",
                 "rendering": "text"
               },
               "hide": {
-                "hideWhenExpression": "referredToCare !== '7308AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "referredToCare !== 'ab396b67-273c-4c97-9f90-f858d79b13b1'"
               }
             }
           ]
@@ -1565,33 +1581,33 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "radio",
-                "concept": "12393AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "92f27f4b-f8be-4d24-9920-f741844dc2c2",
                 "answers": [
                   {
-                    "concept": "1065AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
                     "label": "Yes"
                   },
                   {
-                    "concept": "1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
                     "label": "No"
                   }
                 ]
               },
               "id": "recencyScreening",
               "hide": {
-                "hideWhenExpression": "isEmpty(finalResult) || finalResult === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA'"
+                "hideWhenExpression": "isEmpty(finalResult) || finalResult === 'a896d2cc-1350-11df-a1f1-0026b9348838'"
               }
             },
             {
-              "type": "patientIdentifier",
-              "label": "Recency Id",
+              "type": "text",
+              "label": "Recency Id (REC14130-00001)",
               "questionInfo": "",
               "id": "recencyId",
               "required": "false",
               "default": "",
               "questionOptions": {
                 "rendering": "text",
-                "identifierType": "fd52829a-75d2-4732-8e43-4bff8e5b4f1a"
+                "identifierType": "a3ba8e7b-808c-4ae3-acaf-724797ae98b4"
               },
               "validators": [
                 {
@@ -1601,7 +1617,7 @@
                 }
               ],
               "hide": {
-                "hideWhenExpression": "isEmpty(finalResult) || finalResult === '664AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' || isEmpty(recencyScreening) || recencyScreening === '1066AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA' "
+                "hideWhenExpression": "isEmpty(finalResult) || finalResult === 'a896d2cc-1350-11df-a1f1-0026b9348838' || isEmpty(recencyScreening) || recencyScreening === 'a899b42e-1350-11df-a1f1-0026b9348838' "
               }
             }
           ]
@@ -1615,10 +1631,9 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "textarea",
-                "concept": "9467AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-                "rows": "3"
+                "concept": "5e4dc798-2cce-4a1a-97e9-bcf22d64b07c"
               },
-              "id": "remarks"
+              "id": "rEmArks"
             }
           ]
         }
@@ -1627,5 +1642,5 @@
   ],
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
-  "encounterType": "9c0a7a57-62ff-4f75-babe-5835b0e921b7"
+  "encounterType": "ae9693ff-d341-4997-8166-fa46ac4d38f4"
 }

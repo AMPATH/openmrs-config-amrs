@@ -1,0 +1,161 @@
+{
+  "name": "AMPATH POC HTS Client Tracing Form V1.1",
+  "description": "HTS Client Tracing Form",
+  "version": "1.1",
+  "published": true,
+  "uuid": "e54e2200-7a2d-4e6b-baaf-46d3b6d66502",
+  "retired": false,
+  "encounter": "HTS",
+  "pages": [
+    {
+      "label": "HTS Client tracing",
+      "sections": [
+        {
+          "label": "Visit Details",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Date:",
+              "type": "encounterDatetime",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "validators": [
+                {
+                  "type": "date",
+                  "allowFutureDates": "false"
+                }
+              ],
+              "id": "encDate"
+            },
+            {
+              "label": "Provider:",
+              "type": "encounterProvider",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encProvider "
+            },
+            {
+              "label": "Location:",
+              "type": "encounterLocation",
+              "questionOptions": {
+                "rendering": "ui-select-extended"
+              },
+              "id": "encLocation"
+            }
+          ]
+        },
+        {
+          "label": "HTS Client Tracing",
+          "isExpanded": "true",
+          "questions": [
+            {
+              "label": "Contact type:",
+              "id": "contactType",
+              "type": "obs",
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a89dea80-1350-11df-a1f1-0026b9348838",
+                "answers": [
+                  {
+                    "concept": "0ce2c4af-f6e1-41cb-b544-cfba74360713",
+                    "label": "Physical tracing"
+                  },
+                  {
+                    "concept": "a89de832-1350-11df-a1f1-0026b9348838",
+                    "label": "Phone tracing"
+                  }
+                ]
+              },
+              "required": "true"
+            },
+            {
+              "label": "Status:",
+              "type": "obs",
+              "alert": {
+                "alertWhenExpression": "contactStatus === 'a899b35c-1350-11df-a1f1-0026b9348838'",
+                "message": "Please remember to fill the referral and linkage form after saving this form"
+              },
+              "questionOptions": {
+                "rendering": "select",
+                "concept": "a8afba58-1350-11df-a1f1-0026b9348838",
+                "answers": [
+                  {
+                    "concept": "a899ea48-1350-11df-a1f1-0026b9348838",
+                    "label": "Not contacted"
+                  },
+                  {
+                    "concept": "a899b42e-1350-11df-a1f1-0026b9348838",
+                    "label": "Contacted but not linked"
+                  },
+                  {
+                    "concept": "a899b35c-1350-11df-a1f1-0026b9348838",
+                    "label": "Contacted and linked"
+                  }
+                ]
+              },
+              "id": "contactStatus",
+              "required": "true"
+            },
+            {
+              "label": "Reason not contacted :",
+              "type": "obs",
+              "id": "reasonsPhone",
+              "questionOptions": {
+                "concept": "a89eeb24-1350-11df-a1f1-0026b9348838",
+                "rendering": "select",
+                "answers": [
+                  {
+                    "concept": "a89decc4-1350-11df-a1f1-0026b9348838",
+                    "label": "Incorrect locator information"
+                  },
+                  {
+                    "concept": "a89de45e-1350-11df-a1f1-0026b9348838",
+                    "label": "No locator information"
+                  },
+                  {
+                    "concept": "a89dec06-1350-11df-a1f1-0026b9348838",
+                    "label": "Calls not going through"
+                  },
+                  {
+                    "concept": "a89dee54-1350-11df-a1f1-0026b9348838",
+                    "label": "Not found at home"
+                  },
+                  {
+                    "concept": "a89ded8c-1350-11df-a1f1-0026b9348838",
+                    "label": "Migrated"
+                  },
+                  {
+                    "concept": "a89e39f4-1350-11df-a1f1-0026b9348838",
+                    "label": "Died"
+                  },
+                  {
+                    "concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
+                    "label": "Others"
+                  }
+                ]
+              },
+              "validators": [],
+              "hide": {
+                "hideWhenExpression": "contactStatus !== 'a899ea48-1350-11df-a1f1-0026b9348838'"
+              }
+            },
+            {
+              "label": "Remarks:",
+              "type": "obs",
+              "id": "remarks",
+              "questionOptions": {
+                "concept": "5e4dc798-2cce-4a1a-97e9-bcf22d64b07c",
+                "rendering": "textarea"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "processor": "EncounterFormProcessor",
+  "referencedForms": [],
+  "encounterType": "47638d14-8b77-4850-8d25-ce0a56fc7724"
+}

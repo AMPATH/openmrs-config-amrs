@@ -1,281 +1,7 @@
 {
-	"name": "ampath_poc_adult_return_visit_form_v1.8",
+	"name": "AMPATH POC Adult Return Visit Form v1.8",
 	"uuid": "xxxx",
 	"processor": "EncounterFormProcessor",
-	"referencedForms": [
-		{
-			"formName": "component_hospitalization",
-			"alias": "hosp",
-			"ref": {
-				"uuid": "77d6652f-4653-4434-af6b-6dab84117044",
-				"display": "Hospitalization Component"
-			}
-		},
-		{
-			"formName": "component_immunization-v1.0",
-			"alias": "immn1",
-			"ref": {
-				"uuid": "11b15110-e325-4d0d-bd54-5f55b21301f5",
-				"display": "Immunization v1.0 Component"
-			}
-		},
-		{
-			"formName": "component_art-v1.2",
-			"alias": "art12",
-			"ref": {
-				"uuid": "49eb4af7-7e05-4b3f-aeb0-d1931e27909b",
-				"display": "Art v1.2 Component"
-			}
-		},
-		{
-			"formName": "component_art-v1.4",
-			"alias": "art14",
-			"ref": {
-				"uuid": "fe2cc2aa-ea65-42a1-a1fc-560fff8d5480",
-				"display": "Art v1.4 DTG Component"
-			}
-		},
-		{
-			"formName": "component_pcp-prophy-v1.2",
-			"alias": "pcp12",
-			"ref": {
-				"uuid": "6493a2dd-d3c3-4ff5-9b2d-02ac6c30fe39",
-				"display": "Pcp v1.2 Prophy Component"
-			}
-		},
-		{
-			"formName": "component_tb-prophy-v1.2",
-			"alias": "tbp12",
-			"ref": {
-				"uuid": "f48291ac-40c5-466b-83ee-62758e804b32",
-				"display": "Tb Prophy Component"
-			}
-		},
-		{
-			"formName": "component_tb-treatment-v1.3",
-			"alias": "tbt13",
-			"ref": {
-				"uuid": "e04b6b46-1682-4804-aa3c-895347c8f402",
-				"display": "Tb Treatment Component"
-			}
-		},
-		{
-			"formName": "component_other-medication",
-			"alias": "omed",
-			"ref": {
-				"uuid": "46205439-ccbf-4f60-80e1-d765861f6257",
-				"display": "Other Medication Component"
-			}
-		},
-		{
-			"formName": "component_side-effect-v1.1",
-			"alias": "se11",
-			"ref": {
-				"uuid": "c45f02b4-12bb-4611-9920-aa2df3b6bd3d",
-				"display": "Side Effect v 1.1 Component"
-			}
-		},
-		{
-			"formName": "component_nutrition",
-			"alias": "nut",
-			"ref": {
-				"uuid": "e421b750-e7fc-4194-b55e-6f2c978e1af5",
-				"display": "Nutrition Component"
-			}
-		},
-		{
-			"formName": "component_vitals",
-			"alias": "vt",
-			"ref": {
-				"uuid": "7f5e06a4-92d1-4fc9-9e05-03b414457d69",
-				"display": "Vitals Component"
-			}
-		},
-		{
-			"formName": "component_hpi",
-			"alias": "hpi",
-			"ref": {
-				"uuid": "b91aef27-cd94-4934-94ac-c168ce539cb3",
-				"display": "Hpi Component"
-			}
-		},
-		{
-			"formName": "component_who-staging",
-			"alias": "who",
-			"ref": {
-				"uuid": "fdf950e0-ff0a-4d7d-a52b-33a8d5b98fb7",
-				"display": "Who Staging Component"
-			}
-		},
-		{
-			"formName": "component_assessment",
-			"alias": "ass",
-			"ref": {
-				"uuid": "98e061d2-4a16-4665-b0dc-fc0266ee689c",
-				"display": "Assessment Component"
-			}
-		},
-		{
-			"formName": "component_sti-v1.0",
-			"alias": "sti1",
-			"ref": {
-				"uuid": "6515b019-5264-4a61-a7fd-e891ea03b5f4",
-				"display": "STI v1.0 Component"
-			}
-		},
-		{
-			"formName": "component_lab-orders-v1.0",
-			"alias": "to",
-			"ref": {
-				"uuid": "61a262b6-3238-4187-9740-dea29ea4f7e4",
-				"display": "Lab Orders v1.0 Component"
-			}
-		},
-		{
-			"formName": "component_referral",
-			"alias": "ref",
-			"ref": {
-				"uuid": "f18a6b65-f55b-4d53-afe2-b929bbb66a70",
-				"display": "Referral Component"
-			}
-		},
-		{
-			"formName": "component_positive-health-dignity-&-prevention-services-v1.0",
-			"alias": "phdp",
-			"ref": {
-				"uuid": "4da1548d-e098-4658-a847-8d42f45059f4",
-				"display": "PHDP Component"
-			}
-		},
-		{
-			"formName": "component_vl-justification",
-			"alias": "vljust",
-			"ref": {
-				"uuid": "c47dd152-9996-4ec9-94bb-434f85a6a2b5",
-				"display": "VL Justification Component"
-			}
-		},
-		{
-			"formName": "component_family-planning-v1.0",
-			"alias": "fp1",
-			"ref": {
-				"uuid": "68363308-0a91-4541-9934-c3e770416d51",
-				"display": "Family Planning v1.0 Component"
-			}
-		},
-		{
-			"ref": {
-				"uuid": "a472864e-ddb4-4741-be6f-20d1b2a9be2b",
-				"display": "component_morisky-adherence-score-v1.0"
-			},
-			"formName": "component_morisky-adherence-score-v1.0",
-			"alias": "mmas1"
-		},
-		{
-			"ref": {
-				"uuid": "10fb1c84-84d8-43b3-8683-2fbe2bc9962a",
-				"display": "Feeding v1.1 Compent"
-			},
-			"formName": "component_feeding-v1.1",
-			"alias": "feed11"
-		},
-		{
-			"ref": {
-				"uuid": "df2529c9-3679-4dc1-b747-d753cdb8b774",
-				"display": "Vitals v1.3 Component"
-			},
-			"formName": "component_vitals-v1.3",
-			"alias": "vt13"
-		},
-		{
-			"ref": {
-				"uuid": "4491d2dc-abc7-45f5-b724-ef534f00d144",
-				"display": "Preclinic v1.4"
-			},
-			"formName": "component_preclinic-review-v1.4",
-			"alias": "pcr14"
-		},
-		{
-			"ref": {
-				"uuid": "68cb1748-94ea-48b2-bfd0-cda5c1a7b7d1",
-				"display": "Reproductive history v1.5"
-			},
-			"formName": "component_reproductive-history-v1.5",
-			"alias": "repro15"
-		},
-		{
-			"ref": {
-				"uuid": "64d07d7c-b82b-4245-ae0a-9e4af907eab7",
-				"display": "Crypto v1.1"
-			},
-			"formName": "component_crypto-v1.1",
-			"alias": "crypto11"
-		},
-		{
-			"ref": {
-				"uuid": "b9e18c55-6547-49ed-8025-f18bacb22e7c",
-				"display": "Lab Results v1.5"
-			},
-			"formName": "component_lab-results-v1.5",
-			"alias": "lr5"
-		},
-		{
-			"ref": {
-				"uuid": "4caf221a-1451-4331-8256-50d37f0d02c6",
-				"display": "OB-History v1.5"
-			},
-			"formName": "component_ob-history-1.5",
-			"alias": "obgynhist15"
-		},
-		{
-			"ref": {
-				"uuid": "c297210f-a151-49a5-bf51-d2d726fe459d",
-				"display": "Enhanced Adherence 1.0"
-			},
-			"formName": "component_enhanced-adherence-v1.0",
-			"alias": "enhadhere1"
-		},
-		{
-			"ref": {
-				"uuid": "83eaa418-9d70-4a27-b5cd-f7eed9e11f6f",
-				"display": "DC Plan"
-			},
-			"formName": "component_dc-plan",
-			"alias": "dcPlan"
-		},
-		{
-			"ref": {
-				"uuid": "ad50a94d-4edb-463d-b6e6-ac83eecffa7c",
-				"display": "component_gender-based-violence"
-			},
-			"formName": "component_gender-based-violence-v1.0",
-			"alias": "gbv10"
-		},
-		{
-			"ref": {
-				"uuid": "1d265294-3a62-4ab4-bc64-038cbd4a8a14",
-				"display": "component_positive-health-dignity-&-prevention-services-v12"
-			},
-			"formName": "component_positive-health-dignity-&-prevention-services-v1.2",
-			"alias": "phdp12"
-		},
-		{
-			"ref": {
-				"uuid": "3b56db77-167f-49ee-b52f-7511ac71294f",
-				"display": "component_referral-v1.4"
-			},
-			"formName": "component_referral-v1.4",
-			"alias": "ref14"
-		},
-		{
-			"ref": {
-				"uuid": "d79f082c-6945-4ce4-940d-ec911c909684",
-				"display": "component_test-reproductive-history-v1.5"
-			},
-			"formName": "component_test-reproductive-history-v1.5",
-			"alias": "testRH15"
-		}
-	],
 	"pages": [
 		{
 			"label": "Encounter Details",
@@ -1053,6 +779,186 @@
 					]
 				},
 				{
+					"label": "Cancer Screening",
+					"isExpanded": "true",
+					"questions": [
+						{
+							"label": "Cervical cancer screening done:",
+							"required": "true",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3086a740-face-4fcd-825b-1e627a66c93a')) ? undefined : HD.getObject('prevEnc').getValue('3086a740-face-4fcd-825b-1e627a66c93a')",
+							"id": "cervCanScreen",
+							"questionOptions": {
+								"concept": "3086a740-face-4fcd-825b-1e627a66c93a",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
+										"label": "Yes"
+									},
+									{
+										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
+										"label": "No"
+									},
+									{
+										"concept": "a899ea48-1350-11df-a1f1-0026b9348838",
+										"label": "Not done"
+									}
+								]
+							},
+							"type": "obs",
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "sex !== 'F'"
+							}
+						},
+						{
+							"label": "Reason cervical cancer screening not done:",
+							"id": "cervCanNotdone",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('032f1b25-2e20-4641-aedb-627d289f11ac')) ? undefined : HD.getObject('prevEnc').getValue('032f1b25-2e20-4641-aedb-627d289f11ac')",
+							"questionOptions": {
+								"concept": "032f1b25-2e20-4641-aedb-627d289f11ac",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "a8a713f8-1350-11df-a1f1-0026b9348838",
+										"label": "Total abdominal hysterectomy "
+									},
+									{
+										"concept": "a109ac83-0b23-459f-9463-2338c90dc875",
+										"label": "Cervix inaccessible"
+									},
+									{
+										"concept": "a89d25fa-1350-11df-a1f1-0026b9348838",
+										"label": "Declined"
+									},
+									{
+										"concept": "a8ad2b4e-1350-11df-a1f1-0026b9348838",
+										"label": "Menses"
+									}
+								]
+							},
+							"type": "obs",
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "cervCanScreen !== 'a899ea48-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Cervical cancer screening test result:",
+							"type": "obs",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f')) ? undefined : HD.getObject('prevEnc').getValue('6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f')",
+							"id": "caTestResult",
+							"questionOptions": {
+								"concept": "6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "a896f3a6-1350-11df-a1f1-0026b9348838",
+										"label": "Positive"
+									},
+									{
+										"concept": "a896d2cc-1350-11df-a1f1-0026b9348838",
+										"label": "Negative"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "sex !== 'F' || cervCanScreen !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "Cervical cancer result date:",
+							"type": "obs",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('958b9055-88be-4bf1-9a2c-f209424a03ac')) ? undefined : HD.getObject('prevEnc').getValue('958b9055-88be-4bf1-9a2c-f209424a03ac')",
+							"default": "",
+							"id": "cercanDate",
+							"questionOptions": {
+								"rendering": "date",
+								"concept": "958b9055-88be-4bf1-9a2c-f209424a03ac"
+							},
+							"validators": [
+								{
+									"type": "js_expression",
+									"failsWhenExpression": "isEmpty(myValue) && !isEmpty(caTestResult) && caTestResult !== 'a89ad3a4-1350-11df-a1f1-0026b9348838' ",
+									"message": "Date is result is required."
+								}
+							],
+							"hide": {
+								"hideWhenExpression": "isEmpty(caTestResult)"
+							}
+						},
+						{
+							"label": "If cervical cancer is positive, is patient on treatment?",
+							"id": "caTreatment",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3e4943b5-8499-43fb-b254-e1bb1dacfdb7')) ? undefined : HD.getObject('prevEnc').getValue('3e4943b5-8499-43fb-b254-e1bb1dacfdb7')",
+							"questionOptions": {
+								"concept": "3e4943b5-8499-43fb-b254-e1bb1dacfdb7",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
+										"label": "Yes"
+									},
+									{
+										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
+										"label": "No"
+									},
+									{
+										"concept": "a89c1ef8-1350-11df-a1f1-0026b9348838",
+										"label": "Completed"
+									},
+									{
+										"concept": "a899b50a-1350-11df-a1f1-0026b9348838",
+										"label": "Unknown"
+									}
+								]
+							},
+							"type": "obs",
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "caTestResult !== 'a896f3a6-1350-11df-a1f1-0026b9348838'"
+							}
+						},
+						{
+							"label": "If patient on treatment, indicate below:",
+							"type": "obs",
+							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('94f54710-6ee0-45cd-ad5f-a990fcb47bc1')) ? undefined : HD.getObject('prevEnc').getValue('94f54710-6ee0-45cd-ad5f-a990fcb47bc1')",
+							"id": "caTreatmentMode",
+							"questionOptions": {
+								"concept": "94f54710-6ee0-45cd-ad5f-a990fcb47bc1",
+								"rendering": "select",
+								"answers": [
+									{
+										"concept": "dcb72b0b-c1cb-4f32-aa82-e8f7b74cc16e",
+										"label": "Cryotherapy"
+									},
+									{
+										"concept": "ca10f28c-586a-427a-8bcc-816f0835ab18",
+										"label": "Chemotherapy"
+									},
+									{
+										"concept": "a8a713f8-1350-11df-a1f1-0026b9348838",
+										"label": "Hysterectomy"
+									},
+									{
+										"concept": "12afc118-5acd-48c6-89a0-1b6156c33d10",
+										"label": "Radiotherapy"
+									},
+									{
+										"concept": "b6fccd82-c622-4c3e-9563-39899e709b3b",
+										"label": "Thermo-coagulation/Loop Electrosurgical Excision Procedure"
+									}
+								]
+							},
+							"validators": [],
+							"hide": {
+								"hideWhenExpression": "caTreatment !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
+							}
+						}
+					]
+				},
+				{
 					"label": "Family Planning Profile",
 					"isExpanded": "true",
 					"questions": [
@@ -1162,7 +1068,7 @@
 									"type": "obs",
 									"validators": [],
 									"hide": {
-										"hideWhenExpression": "sex !== 'F' || menStatus === '5cc1c1a7-dfcc-47dc-ad73-c386c188fad8' || arrayContains(['02e3ce61-fa24-445e-a1f0-6e3299142966','53b856ad-21ef-4745-9acd-81aca01bba31','55c74fa8-c810-4b37-a918-14a851bba6f3','44032888-08e1-4900-b9dd-7d236d79276c'], visitTypeUuid)"
+										"hideWhenExpression": "sex !== 'F' ||cervCanNotdone === 'a8a713f8-1350-11df-a1f1-0026b9348838' || menStatus === '5cc1c1a7-dfcc-47dc-ad73-c386c188fad8' || arrayContains(['02e3ce61-fa24-445e-a1f0-6e3299142966','53b856ad-21ef-4745-9acd-81aca01bba31','55c74fa8-c810-4b37-a918-14a851bba6f3','44032888-08e1-4900-b9dd-7d236d79276c'], visitTypeUuid)"
 									}
 								},
 								{
@@ -1192,185 +1098,6 @@
 								}
 							],
 							"id": "__Gvq8rJDs9"
-						}
-					]
-				},
-				{
-					"label": "Cancer Screening",
-					"isExpanded": "true",
-					"questions": [
-						{
-							"label": "Cervical cancer screening done:",
-							"required": "true",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3086a740-face-4fcd-825b-1e627a66c93a')) ? undefined : HD.getObject('prevEnc').getValue('3086a740-face-4fcd-825b-1e627a66c93a')",
-							"id": "cervCanScreen",
-							"questionOptions": {
-								"concept": "3086a740-face-4fcd-825b-1e627a66c93a",
-								"rendering": "select",
-								"answers": [
-									{
-										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
-										"label": "Yes"
-									},
-									{
-										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
-										"label": "No"
-									},
-									{
-										"concept": "a899ea48-1350-11df-a1f1-0026b9348838",
-										"label": "Not done"
-									}
-								]
-							},
-							"type": "obs",
-							"validators": [],
-							"hide": {
-								"hideWhenExpression": "sex !== 'F'"
-							}
-						},
-						{
-							"label": "Reason cervical cancer screening not done:",
-							"id": "cervCanNotdone",
-							"questionOptions": {
-								"concept": "032f1b25-2e20-4641-aedb-627d289f11ac",
-								"rendering": "select",
-								"answers": [
-									{
-										"concept": "a8a713f8-1350-11df-a1f1-0026b9348838",
-										"label": "Total abdominal hysterectomy "
-									},
-									{
-										"concept": "a109ac83-0b23-459f-9463-2338c90dc875",
-										"label": "Cervix inaccessible"
-									},
-									{
-										"concept": "a89d25fa-1350-11df-a1f1-0026b9348838",
-										"label": "Declined"
-									},
-									{
-										"concept": "a8ad2b4e-1350-11df-a1f1-0026b9348838",
-										"label": "Menses"
-									}
-								]
-							},
-							"type": "obs",
-							"validators": [],
-							"hide": {
-								"hideWhenExpression": "cervCanScreen !== 'a899ea48-1350-11df-a1f1-0026b9348838'"
-							}
-						},
-						{
-							"label": "Cervical cancer screening test result:",
-							"type": "obs",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f')) ? undefined : HD.getObject('prevEnc').getValue('6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f')",
-							"id": "caTestResult",
-							"questionOptions": {
-								"concept": "6bad2971-c776-4f0e-ae15-a3fc0cbd7d0f",
-								"rendering": "select",
-								"answers": [
-									{
-										"concept": "a896f3a6-1350-11df-a1f1-0026b9348838",
-										"label": "Positive"
-									},
-									{
-										"concept": "a896d2cc-1350-11df-a1f1-0026b9348838",
-										"label": "Negative"
-									}
-								]
-							},
-							"validators": [],
-							"hide": {
-								"hideWhenExpression": "sex !== 'F' ||cervCanScreen !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
-							}
-						},
-						{
-							"label": "Cervical cancer result date:",
-							"type": "obs",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('958b9055-88be-4bf1-9a2c-f209424a03ac')) ? undefined : HD.getObject('prevEnc').getValue('958b9055-88be-4bf1-9a2c-f209424a03ac')",
-							"default": "",
-							"id": "cercanDate",
-							"questionOptions": {
-								"rendering": "date",
-								"concept": "958b9055-88be-4bf1-9a2c-f209424a03ac"
-							},
-							"validators": [
-								{
-									"type": "js_expression",
-									"failsWhenExpression": "isEmpty(myValue) && !isEmpty(caTestResult) && caTestResult !== 'a89ad3a4-1350-11df-a1f1-0026b9348838' ",
-									"message": "Date is result is required."
-								}
-							],
-							"hide": {
-								"hideWhenExpression": "isEmpty(caTestResult)"
-							}
-						},
-						{
-							"label": "If cervical cancer is positive, is patient on treatment?",
-							"id": "caTreatment",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('3e4943b5-8499-43fb-b254-e1bb1dacfdb7')) ? undefined : HD.getObject('prevEnc').getValue('3e4943b5-8499-43fb-b254-e1bb1dacfdb7')",
-							"questionOptions": {
-								"concept": "3e4943b5-8499-43fb-b254-e1bb1dacfdb7",
-								"rendering": "select",
-								"answers": [
-									{
-										"concept": "a899b35c-1350-11df-a1f1-0026b9348838",
-										"label": "Yes"
-									},
-									{
-										"concept": "a899b42e-1350-11df-a1f1-0026b9348838",
-										"label": "No"
-									},
-									{
-										"concept": "a89c1ef8-1350-11df-a1f1-0026b9348838",
-										"label": "Completed"
-									},
-									{
-										"concept": "a899b50a-1350-11df-a1f1-0026b9348838",
-										"label": "Unknown"
-									}
-								]
-							},
-							"type": "obs",
-							"validators": [],
-							"hide": {
-								"hideWhenExpression": "caTestResult !== 'a896f3a6-1350-11df-a1f1-0026b9348838'"
-							}
-						},
-						{
-							"label": "If patient on treatment, indicate below:",
-							"type": "obs",
-							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('94f54710-6ee0-45cd-ad5f-a990fcb47bc1')) ? undefined : HD.getObject('prevEnc').getValue('94f54710-6ee0-45cd-ad5f-a990fcb47bc1')",
-							"id": "caTreatmentMode",
-							"questionOptions": {
-								"concept": "94f54710-6ee0-45cd-ad5f-a990fcb47bc1",
-								"rendering": "select",
-								"answers": [
-									{
-										"concept": "dcb72b0b-c1cb-4f32-aa82-e8f7b74cc16e",
-										"label": "Cryotherapy"
-									},
-									{
-										"concept": "ca10f28c-586a-427a-8bcc-816f0835ab18",
-										"label": "Chemotherapy"
-									},
-									{
-										"concept": "a8a713f8-1350-11df-a1f1-0026b9348838",
-										"label": "Hysterectomy"
-									},
-									{
-										"concept": "12afc118-5acd-48c6-89a0-1b6156c33d10",
-										"label": "Radiotherapy"
-									},
-									{
-										"concept": "b6fccd82-c622-4c3e-9563-39899e709b3b",
-										"label": "Thermo-coagulation/Loop Electrosurgical Excision Procedure"
-									}
-								]
-							},
-							"validators": [],
-							"hide": {
-								"hideWhenExpression": "caTreatment !== 'a899b35c-1350-11df-a1f1-0026b9348838'"
-							}
 						}
 					]
 				},
@@ -7922,7 +7649,7 @@
 					"questions": [
 						{
 							"label": "Comorbid illness:",
-							"required":"true",
+							"required": "true",
 							"historicalExpression": "_.isEmpty(HD.getObject('prevEnc').getValue('0ac4af8a-1b8e-4404-b445-c0471d6f7576')) ? undefined : HD.getObject('prevEnc').getValue('0ac4af8a-1b8e-4404-b445-c0471d6f7576')",
 							"id": "comorbidIllness",
 							"questionOptions": {
@@ -7950,7 +7677,7 @@
 									},
 									{
 										"concept": "a8986880-1350-11df-a1f1-0026b9348838",
-										"label": "Hypertention"
+										"label": "Hypertension"
 									},
 									{
 										"concept": "a899e0ac-1350-11df-a1f1-0026b9348838",
@@ -8989,18 +8716,6 @@
 										"label": "Targeted risk reduction"
 									},
 									{
-										"concept": "4b2bb2ce-4160-4e44-b310-5ceeb761ec38",
-										"label": "Treatment of GBV injuries"
-									},
-									{
-										"concept": "717c50e1-48da-4148-aeee-c49fdd957b64",
-										"label": "First line support (LIVES)"
-									},
-									{
-										"concept": "b75702a6-908d-491b-9399-6495712c81cc",
-										"label": "Emergency contraceptives"
-									},
-									{
 										"concept": "a89ad3a4-1350-11df-a1f1-0026b9348838",
 										"label": "N/A"
 									}
@@ -9145,8 +8860,20 @@
 												"label": "Resistant clinic"
 											},
 											{
+												"concept": "4b2bb2ce-4160-4e44-b310-5ceeb761ec38",
+												"label": "Treatment of GBV injuries"
+											},
+											{
+												"concept": "717c50e1-48da-4148-aeee-c49fdd957b64",
+												"label": "First line support (LIVES)"
+											},
+											{
+												"concept": "b75702a6-908d-491b-9399-6495712c81cc",
+												"label": "Emergency contraceptives"
+											},
+											{
 												"concept": "355b199f-c9c7-4e91-831f-2be17d2c67bd",
-												"label": "Legal counsel"
+												"label": "Legal services"
 											},
 											{
 												"concept": "5fc2555b-cae1-4bb8-9cd8-e19c2c04fc37",
@@ -9161,6 +8888,10 @@
 												"label": "Emergency shelter"
 											},
 											{
+												"concept": "57e92f60-0c54-4769-ba3c-e00bae83f811",
+												"label": "Forensic Exam"
+											},
+											{
 												"concept": "a8aaf3e2-1350-11df-a1f1-0026b9348838",
 												"label": "Other"
 											}
@@ -9168,7 +8899,13 @@
 										"rendering": "multiCheckbox"
 									},
 									"type": "obs",
-									"validators": []
+									"validators": [
+										{
+											"type": "js_expression",
+											"failsWhenExpression": "isEmpty(myValue) && (physical === 'a899b35c-1350-11df-a1f1-0026b9348838' || emmotional === 'a899b35c-1350-11df-a1f1-0026b9348838' || sexual === 'a899b35c-1350-11df-a1f1-0026b9348838' || financial === 'a899b35c-1350-11df-a1f1-0026b9348838')",
+											"message": "Patient screened positive for GBV/IPV. Please indicate service provided."
+										}
+									]
 								},
 								{
 									"label": "Referrals made to the patient: Other (specify):",
@@ -9181,10 +8918,10 @@
 									"hide": {
 										"hideWhenExpression": "referrals !== 'a8aaf3e2-1350-11df-a1f1-0026b9348838'"
 									},
-									"id": "__rn0y3z8KE"
+									"id": "otherRefer"
 								}
 							],
-							"id": "__JrJ9yw70o"
+							"id": "referralDetail"
 						},
 						{
 							"label": "If referred for hospitalization, choose location:",

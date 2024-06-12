@@ -2,7 +2,7 @@
   "name": "AMPATH POC HTS Client Referral Form V1.0",
   "description": "HTS Client Referral Form",
   "version": "1.0",
-  "uuid": "f9d32887-ff76-4828-a39d-b661b22d0079",
+  "uuid": "3b688533-0de1-4c3e-b75a-c5b865080d80",
   "retired": false,
   "encounter": "HTS",
   "pages": [
@@ -54,7 +54,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "text",
-                "concept": "9202AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "99f8ac81-cea1-43eb-88fb-29a9ea2d77cf"
               },
               "id": "referredFacility",
               "required": "true"
@@ -64,7 +64,7 @@
               "type": "obs",
               "questionOptions": {
                 "rendering": "date",
-                "concept": "10737AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"
+                "concept": "1cd286f4-7256-4a56-b90a-6acd8734f9c9"
               },
               "id": "date-to-be-enrolled",
               "validators": [
@@ -85,7 +85,7 @@
               "type": "obs",
               "id": "remarks",
               "questionOptions": {
-                "concept": "9467AAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+                "concept": "5e4dc798-2cce-4a1a-97e9-bcf22d64b07c",
                 "rendering": "textarea"
               }
             }
@@ -96,5 +96,5 @@
   ],
   "processor": "EncounterFormProcessor",
   "referencedForms": [],
-  "encounterType": "9c0a7a57-62ff-4f75-babe-5835b0e921b7"
+  "encounterType": "55c10a7a-2732-4063-be25-68d5e1bce1fc"
 }
