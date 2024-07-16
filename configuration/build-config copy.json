@@ -36,6 +36,7 @@
     "@ampath/esm-patient-registration-app": "next",
     "@ampath/esm-patient-flags-app": "next",
     "@ampath/esm-version-app": "next",
+    "@ampath/esm-care-panel-app": "next",
     "@ugandaemr/esm-bed-management-app": "next"
   },
   "spaPath": "/amrs/spa",

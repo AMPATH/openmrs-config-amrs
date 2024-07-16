@@ -28,7 +28,9 @@
       "monthlySchedule": true
     }
   },
-  "@openmrs/esm-patient-forms-app": {},
+  "@openmrs/esm-patient-forms-app": {
+    "customFormsUrl": "/ws/rest/v1/amrs/forms"
+  },
   "@openmrs/esm-patient-chart-app": {
     "showServiceQueueFields": true,
     "showUpcomingAppointments": true,
